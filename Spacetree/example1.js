@@ -214,7 +214,7 @@ function init() {
                 if (normal.checked) {
                     st.onClick(node.id);
                 } else {
-                    json = createNewJson(node);
+                    json = createNewJson(node, json);
                     document.getElementById("infovis").innerHTML = "";
                     init();
                     //st.setRoot(node.id, 'animate');
@@ -306,23 +306,28 @@ function init() {
 }
 
 var jsonObject = json;
-function createNewJson(node) {
-    var newJson = {};
-    if (jsonObject.id === node.id) {
+var newJson = {};
+var flag = true;
+function createNewJson(node, jsonObject) {
+    if (jsonObject.id === node.id && falg === true) {
         newJson = jsonObject;
-        console.log(newJson);
+        flag = false;
         return newJson;
     } else if (jsonObject.children) {
         for (var i = 0; i < jsonObject.children.length; i++) {
-            var tmp = jsonObject.children[i];
-            if (tmp.id === node.id) {
-                newJson = tmp;
-                console.log(newJson);
+            if (flag === true) {
+                var tmpObject = jsonObject.children[i];
+                if (tmpObject.id === node.id) {
+                    newJson = tmpObject;
+                    flag = false;
+                    return newJson;
+                } else {
+                    createNewJson(node, tmpObject);
+                }
+            } else {
                 return newJson;
             }
         }
-        //jsonObject = jsonObject.children;
-        createNewJson(node);
     }
 }
 
@@ -331,4 +336,6 @@ function resetPage() {
     json = storedJson;
     document.getElementById("infovis").innerHTML = "";
     init();
+    newJson = {};
+    flag = true;
 }
