@@ -25,144 +25,145 @@ var Log = {
     }
 };
 
+//init data
+var json = {
+    "id": "11",
+    "name": "项目",
+    "data": {},
+    "children": [
+        {
+            "id": "21",
+            "name": "产品1",
+            "data": {},
+            "children": [
+                {
+                    "id": "311",
+                    "name": "合同1",
+                    "data": {},
+                    "children": [
+                        {
+                            "id": "4111",
+                            "name": "贷款",
+                            "data": {},
+                            "children": []
+                        },
+                        {
+                            "id": "4112",
+                            "name": "抵押",
+                            "data": {},
+                            "children": []
+                        },
+                        {
+                            "id": "4113",
+                            "name": "投资",
+                            "data": {},
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "312",
+                    "name": "合同2",
+                    "data": {},
+                    "children": []
+                },
+                {
+                    "id": "313",
+                    "name": "合同3",
+                    "data": {},
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": "22",
+            "name": "产品2",
+            "data": {},
+            "children": [
+                {
+                    "id": "321",
+                    "name": "合同3",
+                    "data": {},
+                    "children": [
+                        {
+                            "id": "4211",
+                            "name": "借款人",
+                            "data": {},
+                            "children": []
+                        },
+                        {
+                            "id": "4212",
+                            "name": "抵押",
+                            "data": {},
+                            "children": []
+                        },
+                        {
+                            "id": "4213",
+                            "name": "投资",
+                            "data": {},
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "23",
+            "name": "产品3",
+            "data": {},
+            "children": [
+                {
+                    "id": "331",
+                    "name": "合同1",
+                    "data": {},
+                    "children": [
+                        {
+                            "id": "4311",
+                            "name": "借款人",
+                            "data": {},
+                            "children": []
+                        },
+                        {
+                            "id": "4312",
+                            "name": "投资",
+                            "data": {},
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": "332",
+                    "name": "合同2",
+                    "data": {},
+                    "children": [
+                        {
+                            "id": "4321",
+                            "name": "借款人",
+                            "data": {},
+                            "children": []
+                        },
+                        {
+                            "id": "4322",
+                            "name": "抵押",
+                            "data": {},
+                            "children": []
+                        },
+                        {
+                            "id": "4323",
+                            "name": "投资",
+                            "data": {},
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+};
+var storedJson = json;
+//end
 
 function init() {
-    //init data
-    var json = {
-        "id": "11",
-        "name": "项目",
-        "data": {},
-        "children": [
-            {
-                "id": "21",
-                "name": "产品1",
-                "data": {},
-                "children": [
-                    {
-                        "id": "311",
-                        "name": "合同1",
-                        "data": {},
-                        "children": [
-                            {
-                                "id": "4111",
-                                "name": "贷款",
-                                "data": {},
-                                "children": []
-                            },
-                            {
-                                "id": "4112",
-                                "name": "抵押",
-                                "data": {},
-                                "children": []
-                            },
-                            {
-                                "id": "4113",
-                                "name": "投资",
-                                "data": {},
-                                "children": []
-                            }
-                        ]
-                    },
-                    {
-                        "id": "312",
-                        "name": "合同2",
-                        "data": {},
-                        "children": []
-                    },
-                    {
-                        "id": "313",
-                        "name": "合同3",
-                        "data": {},
-                        "children": []
-                    }
-                ]
-            },
-            {
-                "id": "22",
-                "name": "产品2",
-                "data": {},
-                "children": [
-                    {
-                        "id": "321",
-                        "name": "合同3",
-                        "data": {},
-                        "children": [
-                            {
-                                "id": "4211",
-                                "name": "借款人",
-                                "data": {},
-                                "children": []
-                            },
-                            {
-                                "id": "4212",
-                                "name": "抵押",
-                                "data": {},
-                                "children": []
-                            },
-                            {
-                                "id": "4213",
-                                "name": "投资",
-                                "data": {},
-                                "children": []
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "23",
-                "name": "产品3",
-                "data": {},
-                "children": [
-                    {
-                        "id": "331",
-                        "name": "合同1",
-                        "data": {},
-                        "children": [
-                            {
-                                "id": "4311",
-                                "name": "借款人",
-                                "data": {},
-                                "children": []
-                            },
-                            {
-                                "id": "4312",
-                                "name": "投资",
-                                "data": {},
-                                "children": []
-                            }
-                        ]
-                    },
-                    {
-                        "id": "332",
-                        "name": "合同2",
-                        "data": {},
-                        "children": [
-                            {
-                                "id": "4321",
-                                "name": "借款人",
-                                "data": {},
-                                "children": []
-                            },
-                            {
-                                "id": "4322",
-                                "name": "抵押",
-                                "data": {},
-                                "children": []
-                            },
-                            {
-                                "id": "4323",
-                                "name": "投资",
-                                "data": {},
-                                "children": []
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    };
-    //end
     //init Spacetree
     //Create a new ST instance
     var st = new $jit.ST({
@@ -213,7 +214,10 @@ function init() {
                 if (normal.checked) {
                     st.onClick(node.id);
                 } else {
-                    st.setRoot(node.id, 'animate');
+                    json = createNewJson(node);
+                    document.getElementById("infovis").innerHTML = "";
+                    init();
+                    //st.setRoot(node.id, 'animate');
                 }
             };
             //set label styles
@@ -299,4 +303,32 @@ function init() {
     top.onchange = left.onchange = bottom.onchange = right.onchange = changeHandler;
     //end
 
+}
+
+var jsonObject = json;
+function createNewJson(node) {
+    var newJson = {};
+    if (jsonObject.id === node.id) {
+        newJson = jsonObject;
+        console.log(newJson);
+        return newJson;
+    } else if (jsonObject.children) {
+        for (var i = 0; i < jsonObject.children.length; i++) {
+            var tmp = jsonObject.children[i];
+            if (tmp.id === node.id) {
+                newJson = tmp;
+                console.log(newJson);
+                return newJson;
+            }
+        }
+        //jsonObject = jsonObject.children;
+        createNewJson(node);
+    }
+}
+
+
+function resetPage() {
+    json = storedJson;
+    document.getElementById("infovis").innerHTML = "";
+    init();
 }
