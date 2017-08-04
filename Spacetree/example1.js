@@ -26,7 +26,7 @@ var Log = {
 };
 
 //init data
-var json = {
+var storedJson =  {
     "id": "11",
     "name": "项目",
     "data": {},
@@ -40,26 +40,7 @@ var json = {
                     "id": "311",
                     "name": "合同1",
                     "data": {},
-                    "children": [
-                        {
-                            "id": "4111",
-                            "name": "贷款",
-                            "data": {},
-                            "children": []
-                        },
-                        {
-                            "id": "4112",
-                            "name": "抵押",
-                            "data": {},
-                            "children": []
-                        },
-                        {
-                            "id": "4113",
-                            "name": "投资",
-                            "data": {},
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 },
                 {
                     "id": "312",
@@ -84,26 +65,7 @@ var json = {
                     "id": "321",
                     "name": "合同3",
                     "data": {},
-                    "children": [
-                        {
-                            "id": "4211",
-                            "name": "借款人",
-                            "data": {},
-                            "children": []
-                        },
-                        {
-                            "id": "4212",
-                            "name": "抵押",
-                            "data": {},
-                            "children": []
-                        },
-                        {
-                            "id": "4213",
-                            "name": "投资",
-                            "data": {},
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 }
             ]
         },
@@ -116,51 +78,21 @@ var json = {
                     "id": "331",
                     "name": "合同1",
                     "data": {},
-                    "children": [
-                        {
-                            "id": "4311",
-                            "name": "借款人",
-                            "data": {},
-                            "children": []
-                        },
-                        {
-                            "id": "4312",
-                            "name": "投资",
-                            "data": {},
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 },
                 {
                     "id": "332",
                     "name": "合同2",
                     "data": {},
-                    "children": [
-                        {
-                            "id": "4321",
-                            "name": "借款人",
-                            "data": {},
-                            "children": []
-                        },
-                        {
-                            "id": "4322",
-                            "name": "抵押",
-                            "data": {},
-                            "children": []
-                        },
-                        {
-                            "id": "4323",
-                            "name": "投资",
-                            "data": {},
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 }
             ]
         }
     ]
 };
-var storedJson = json;
+var json = {};
+json = JSON.parse(JSON.stringify(storedJson));
+var usingJson = {};
 //end
 
 function init() {
@@ -212,9 +144,13 @@ function init() {
             label.innerHTML = node.name;
             label.onclick = function () {
                 if (normal.checked) {
-                    st.onClick(node.id);
-                } else {
+                    //st.onClick(node.id);
+                    json = storedJson;
                     json = createNewJson(node, json);
+                    document.getElementById("infovis").innerHTML = "";
+                    init();
+                } else {
+                    json = createNewJson(node, storedJson);
                     document.getElementById("infovis").innerHTML = "";
                     init();
                     //st.setRoot(node.id, 'animate');
@@ -273,7 +209,8 @@ function init() {
         }
     });
     //load json data
-    st.loadJSON(json);
+    usingJson = getNewJson(json);
+    st.loadJSON(usingJson);
     //compute node positions and layout
     st.compute();
     //optional: make a translation of the tree
@@ -291,10 +228,10 @@ function init() {
 
     function changeHandler() {
         if (this.checked) {
-            top.disabled = bottom.disabled = right.disabled = left.disabled = true;
+            left.disabled = bottom.disabled = right.disabled = top.disabled = true;
             st.switchPosition(this.value, "animate", {
                 onComplete: function () {
-                    top.disabled = bottom.disabled = right.disabled = left.disabled = false;
+                    left.disabled = bottom.disabled = right.disabled = top.disabled = false;
                 }
             });
         }
@@ -309,7 +246,7 @@ var jsonObject = json;
 var newJson = {};
 var flag = true;
 function createNewJson(node, jsonObject) {
-    if (jsonObject.id === node.id && falg === true) {
+    if (jsonObject.id === node.id && flag === true) {
         newJson = jsonObject;
         flag = false;
         return newJson;
@@ -333,9 +270,22 @@ function createNewJson(node, jsonObject) {
 
 
 function resetPage() {
-    json = storedJson;
+    json = JSON.parse(JSON.stringify(storedJson));
     document.getElementById("infovis").innerHTML = "";
     init();
     newJson = {};
     flag = true;
+}
+
+function getNewJson(json) {
+    var tempJson = {};
+    if (json.children) {
+
+        for (var i = 0; i < json.children.length; i++) {
+            if (json.children[i].children) {
+                json.children[i].children = [];
+            }
+        }
+    }
+    return json;
 }

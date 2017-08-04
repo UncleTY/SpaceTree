@@ -658,7 +658,7 @@ THE SOFTWARE.
     };
     n.Tree = {
         $extend: true,
-        orientation: "left",
+        orientation: "top",//默认加载位置
         subtreeOffset: 8,
         siblingOffset: 5,
         indent: 10,
