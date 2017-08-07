@@ -1403,6 +1403,7 @@ THE SOFTWARE.
             x = 1 + w * A;
             this.canvas.scale(x, x)
         },
+        //拖拽
         onMouseDown: function(B, A, z) {
             if (!this.config.panning) {
                 return
@@ -4286,7 +4287,7 @@ THE SOFTWARE.
             initialize: function(z) {
                 var B = $jit.ST;
                 var A = {
-                    levelsToShow: 2,
+                    levelsToShow: 1,//显示树的层数
                     levelDistance: 30,
                     constrained: true,
                     Node: {

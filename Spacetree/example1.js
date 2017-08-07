@@ -91,7 +91,7 @@ var storedJson = {
     ]
 };
 var json = {};
-json = JSON.parse(JSON.stringify(storedJson));
+json = storedJson;
 var usingJson = {};
 //end
 
@@ -143,17 +143,12 @@ function init() {
             label.id = node.id;
             label.innerHTML = node.name;
             label.onclick = function () {
-                if (normal.checked) {
-                    //st.onClick(node.id);
-                    json = storedJson;
-                    json = createNewJson(node, json);
-                    document.getElementById("infovis").innerHTML = "";
-                    //var position = getCheckedPosition();
-                    init();
+                if (normal.checked && node._depth <= 1) {
+                    st.onClick(node.id);
                 } else {
-                    json = createNewJson(node, storedJson);
-                    document.getElementById("infovis").innerHTML = "";
-                    init();
+                    //json = createNewJson(node, storedJson);
+                    //document.getElementById("infovis").innerHTML = "";
+                    //init();
                     //st.setRoot(node.id, 'animate');
                 }
             };
@@ -210,8 +205,8 @@ function init() {
         }
     });
     //load json data
-    usingJson = getNewJson(json);
-    st.loadJSON(usingJson);
+    //usingJson = getNewJson(json);
+    st.loadJSON(json);
     //compute node positions and layout
     st.compute();
     //optional: make a translation of the tree
@@ -289,13 +284,4 @@ function getNewJson(json) {
         }
     }
     return json;
-}
-
-function getCheckedPosition() {
-    var arr = document.getElementsByName("orientation");
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i].checked) {
-            return arr[i].value;
-        }
-    }
 }
