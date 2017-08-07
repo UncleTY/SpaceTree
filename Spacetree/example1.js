@@ -26,7 +26,7 @@ var Log = {
 };
 
 //init data
-var storedJson =  {
+var storedJson = {
     "id": "11",
     "name": "项目",
     "data": {},
@@ -148,6 +148,7 @@ function init() {
                     json = storedJson;
                     json = createNewJson(node, json);
                     document.getElementById("infovis").innerHTML = "";
+                    //var position = getCheckedPosition();
                     init();
                 } else {
                     json = createNewJson(node, storedJson);
@@ -288,4 +289,13 @@ function getNewJson(json) {
         }
     }
     return json;
+}
+
+function getCheckedPosition() {
+    var arr = document.getElementsByName("orientation");
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i].checked) {
+            return arr[i].value;
+        }
+    }
 }
