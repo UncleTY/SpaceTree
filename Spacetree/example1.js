@@ -26,7 +26,7 @@ var Log = {
 };
 
 //init data
-var storedJson = {
+var json = {
     "id": "11",
     "name": "项目",
     "data": {},
@@ -90,9 +90,6 @@ var storedJson = {
         }
     ]
 };
-var json = {};
-json = storedJson;
-var usingJson = {};
 //end
 
 function init() {
@@ -205,7 +202,6 @@ function init() {
         }
     });
     //load json data
-    //usingJson = getNewJson(json);
     st.loadJSON(json);
     //compute node positions and layout
     st.compute();
@@ -236,52 +232,4 @@ function init() {
     top.onchange = left.onchange = bottom.onchange = right.onchange = changeHandler;
     //end
 
-}
-
-var jsonObject = json;
-var newJson = {};
-var flag = true;
-function createNewJson(node, jsonObject) {
-    if (jsonObject.id === node.id && flag === true) {
-        newJson = jsonObject;
-        flag = false;
-        return newJson;
-    } else if (jsonObject.children) {
-        for (var i = 0; i < jsonObject.children.length; i++) {
-            if (flag === true) {
-                var tmpObject = jsonObject.children[i];
-                if (tmpObject.id === node.id) {
-                    newJson = tmpObject;
-                    flag = false;
-                    return newJson;
-                } else {
-                    createNewJson(node, tmpObject);
-                }
-            } else {
-                return newJson;
-            }
-        }
-    }
-}
-
-
-function resetPage() {
-    json = JSON.parse(JSON.stringify(storedJson));
-    document.getElementById("infovis").innerHTML = "";
-    init();
-    newJson = {};
-    flag = true;
-}
-
-function getNewJson(json) {
-    var tempJson = {};
-    if (json.children) {
-
-        for (var i = 0; i < json.children.length; i++) {
-            if (json.children[i].children) {
-                json.children[i].children = [];
-            }
-        }
-    }
-    return json;
 }
