@@ -658,7 +658,7 @@ THE SOFTWARE.
     };
     n.Tree = {
         $extend: true,
-        orientation: "top",//默认加载位置
+        orientation: "left",//默认加载位置
         subtreeOffset: 8,
         siblingOffset: 5,
         indent: 10,
@@ -3792,7 +3792,7 @@ THE SOFTWARE.
                 x.appendChild(w);
                 this.labels[A.id] = w
             }
-            this.placeLabel(w, A, y)
+            this.placeLabel(w, A, y)//显示标签
         }
     });
     e.Label.SVG = new q({

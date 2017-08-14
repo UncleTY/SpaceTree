@@ -7,74 +7,19 @@ html, body {
     background-color:#F2F2F2;
 }
 
-input, select {
-    font-size:0.9em;
-}
 
-table {
-    margin-top:-10px;
-    margin-left:7px;
-}
-
-h4 {
-    font-size:1.1em;
-    text-decoration:none;
-    font-weight:normal;
-    color:#23A4FF;
-}
-
-a {
-    color:#23A4FF;
-}
 
 #container {
-    width: 1000px;
-    height:400px;
+    width: 100%;
+    height:100%;
     margin:0 auto;
     position:relative;
 }
 
-#left-container, 
-#right-container, 
-#center-container {
-    height:400px;
-    position:absolute;
-    top:0;
-}
-
-#left-container, #right-container {
-    width:200px;
-    color:#686c70;
-    text-align: left;
-    overflow: auto;
-    background-color:#fff;
-    background-repeat:no-repeat;
-    border-bottom:1px solid #ddd;
-}
-
-#left-container {
-    left:0;
-    background-image:url('col2.png');
-    background-position:center right;
-    border-left:1px solid #ddd;
-    
-}
-
-#right-container {
-    right:0;
-    background-image:url('col1.png');
-    background-position:center left;
-    border-right:1px solid #ddd;
-}
-
-#right-container h4{
-    text-indent:8px;
-}
 
 #center-container {
-    width:600px;
-    left:200px;
-    background-color:#E3E3E3;/*背景颜色 透明transparent*/
+    width:1000px;
+    background-color:white;/*背景颜色 透明transparent*/
     color:#ccc;
 }
 
@@ -99,15 +44,15 @@ a {
 
 #infovis {
     position:relative;
-    width:600px;
-    height:400px;
-    margin:auto;
+    height:520px;
+    display: block;
+    margin-top:auto;
     overflow:hidden;
 }
 
 /*TOOLTIPS*/
 .tip {
-    color: #111;
+    color: #555;
     width: 139px;
     background-color: white;
     border:1px solid #ccc;
