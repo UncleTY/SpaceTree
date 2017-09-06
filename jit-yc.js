@@ -1693,7 +1693,7 @@ THE SOFTWARE.
                 height = C ? (A.height - C.height - this.translateOffsetY * 2) : A.height;
                 var z = this.getCtx();
                 C && z.scale(1 / this.scaleOffsetX, 1 / this.scaleOffsetY);
-                z.translate(B / 2, height / 2)
+                z.translate(B / 2, height / 2)   //图形加载位置
             },
             resize: function(C, z) {
                 var B = this.getSize(),

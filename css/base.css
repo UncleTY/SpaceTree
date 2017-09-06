@@ -41,6 +41,14 @@ html, body {
     color:#23A4FF;
 }
 
+#detail {
+    position:absolute;
+    top:10px;
+    font-size:1.0em;
+    font-weight:bold;
+    color:#23A4FF;
+}
+
 
 #infovis {
     position:relative;
