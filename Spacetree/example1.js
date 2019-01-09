@@ -9,6 +9,702 @@ var Log = {
     }
 };
 
+var jsons ={
+    "id": "-9999",
+    "name": "正经项目别动",
+    "pid": "-10000",
+    "children": [
+      {
+        "code_name": "",
+        "data": "",
+        "id": "-4",
+        "l_busin_flag": "0",
+        "l_flag": "0",
+        "name": "对手方信息",
+        "pid": "-9999",
+        "vc_kind_name": "",
+        "children": [
+          {
+            "code_name": "l_rival_id",
+            "data": "1",
+            "id": "2",
+            "l_busin_flag": "22238",
+            "l_flag": "1",
+            "name": "1<br/>机构对手方测试",
+            "pid": "-4",
+            "vc_kind_name": "RIVAL",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": 0.1,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "2",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "1<br/>机构对手方测试"
+          },
+          {
+            "code_name": "l_rival_id",
+            "data": "5",
+            "id": "4",
+            "l_busin_flag": "22238",
+            "l_flag": "1",
+            "name": "5<br/>cw",
+            "pid": "-4",
+            "vc_kind_name": "RIVAL",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -0.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "4",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "5<br/>cw"
+          }
+        ],
+        "alias": "对手方信息"
+      },
+      {
+        "code_name": "",
+        "data": "",
+        "id": "-3",
+        "l_busin_flag": "0",
+        "l_flag": "0",
+        "name": "合同信息",
+        "pid": "-9999",
+        "vc_kind_name": "",
+        "children": [
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ5200217005",
+            "id": "5",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ5200217005<br/>001001000011",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -1.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "5",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ5200217005<br/>001001000011"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ5200217006",
+            "id": "6",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ5200217006<br/>LBJ合同",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -2.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "6",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ5200217006<br/>LBJ合同"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ5200217008",
+            "id": "7",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ5200217008<br/>james",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -3.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "7",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ5200217008<br/>james"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ5200217009",
+            "id": "8",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ5200217009<br/>测试日期",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -4.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "8",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ5200217009<br/>测试日期"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ520021700A",
+            "id": "9",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ520021700A<br/>股权日期",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -5.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "9",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ520021700A<br/>股权日期"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ520021700H",
+            "id": "10",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ520021700H<br/>11",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -6.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "10",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ520021700H<br/>11"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ520021700I",
+            "id": "11",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ520021700I<br/>12",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -7.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "11",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ520021700I<br/>12"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ520021700J",
+            "id": "12",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ520021700J<br/>13",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -8.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "12",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ520021700J<br/>13"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ520021700K",
+            "id": "13",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ520021700K<br/>15",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -9.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "13",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ520021700K<br/>15"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ520021700L",
+            "id": "14",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ520021700L<br/>16",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -10.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "14",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ520021700L<br/>16"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ520021700M",
+            "id": "15",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ520021700M<br/>17",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -11.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "15",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ520021700M<br/>17"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ520021700N",
+            "id": "16",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ520021700N<br/>22",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -12.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "16",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ520021700N<br/>22"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ520021700P",
+            "id": "17",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ520021700P<br/>0010001",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -13.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "17",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ520021700P<br/>0010001"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "GQ520021700R",
+            "id": "18",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "GQ520021700R<br/>0010002",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -14.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "18",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "GQ520021700R<br/>0010002"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "ZQD200217006",
+            "id": "21",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "ZQD200217006<br/>多重利率",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -15.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "21",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "ZQD200217006<br/>多重利率"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "ZQD200217009",
+            "id": "22",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "ZQD200217009<br/>11",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -16.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "22",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "ZQD200217009<br/>11"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "ZQD20021700A",
+            "id": "23",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "ZQD20021700A<br/>11",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -17.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "23",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "ZQD20021700A<br/>11"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "ZQD20021700B",
+            "id": "24",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "ZQD20021700B<br/>12",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -18.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "24",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "ZQD20021700B<br/>12"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "ZQD20021700C",
+            "id": "25",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "ZQD20021700C<br/>22",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -19.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "25",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "ZQD20021700C<br/>22"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "ZQD20021700D",
+            "id": "26",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "ZQD20021700D<br/>001001001",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -20.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "26",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "ZQD20021700D<br/>001001001"
+          },
+          {
+            "code_name": "vc_stock_code",
+            "data": "ZQD20021700J",
+            "id": "27",
+            "l_busin_flag": "22229",
+            "l_flag": "1",
+            "name": "ZQD20021700J<br/>ddf",
+            "pid": "-3",
+            "vc_kind_name": "CONTRACT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -21.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "27",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "ZQD20021700J<br/>ddf"
+          }
+        ],
+        "alias": "合同信息"
+      },
+      {
+        "code_name": "",
+        "data": "",
+        "id": "-1",
+        "l_busin_flag": "0",
+        "l_flag": "0",
+        "name": "基金信息",
+        "pid": "-9999",
+        "vc_kind_name": "",
+        "children": [
+          {
+            "code_name": "vc_product_id",
+            "data": "12121",
+            "id": "1",
+            "l_busin_flag": "22430",
+            "l_flag": "1",
+            "name": "12121<br/>12121基金",
+            "pid": "-1",
+            "vc_kind_name": "PRODUCT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -22.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "1",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "12121<br/>12121基金"
+          },
+          {
+            "code_name": "vc_product_id",
+            "data": "201700100101",
+            "id": "3",
+            "l_busin_flag": "22430",
+            "l_flag": "1",
+            "name": "201700100101<br/>天成一号",
+            "pid": "-1",
+            "vc_kind_name": "PRODUCT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -23.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "3",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "201700100101<br/>天成一号"
+          },
+          {
+            "code_name": "vc_product_id",
+            "data": "JJ1234",
+            "id": "19",
+            "l_busin_flag": "22430",
+            "l_flag": "1",
+            "name": "JJ1234<br/>jijin1234",
+            "pid": "-1",
+            "vc_kind_name": "PRODUCT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -24.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "19",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "JJ1234<br/>jijin1234"
+          },
+          {
+            "code_name": "vc_product_id",
+            "data": "XZTRUST00101",
+            "id": "20",
+            "l_busin_flag": "22430",
+            "l_flag": "1",
+            "name": "XZTRUST00101<br/>西藏信托集合信托0001",
+            "pid": "-1",
+            "vc_kind_name": "PRODUCT",
+            "children": [
+              {
+                "code_name": "l_rival_id",
+                "data": "1",
+                "id": -25.9,
+                "l_busin_flag": "22238",
+                "l_flag": "1",
+                "name": "修改",
+                "pid": "20",
+                "vc_kind_name": "RIVAL",
+                "children": []
+              }
+            ],
+            "alias": "XZTRUST00101<br/>西藏信托集合信托0001"
+          }
+        ],
+        "alias": "基金信息"
+      }
+    ]
+  }
+
+
 var json = {
     "data": "",
     "id": "-9999",
@@ -443,12 +1139,12 @@ function init() {
             height: 50,
             width: 100,
             type: 'ellipse',
-            color: '#aaa',
+            color: '#9BCD9B',
             overridable: true
         },
 
         Edge: {
-            type: 'bezier',
+            type: 'quadratic:end',
             overridable: true
         },
 
@@ -467,27 +1163,18 @@ function init() {
             label.id = node.id;
             label.innerHTML = node.name;
             label.onclick = function () {
-                if (node._depth <= 1) {
-                    st.onClick(node.id);
-                    //changeHeight(node, json);
-                } else {
-                    showDetails(node.id);
-                    //json = createNewJson(node, storedJson);
-                    //document.getElementById("infovis").innerHTML = "";
-                    //init();
-                    //st.setRoot(node.id, 'animate');
-                }
+                 st.onClick(node.id);
             };
             //set label styles
             var style = label.style;
             style.width = 100 + 'px';
             style.height = 40 + 'px';
             style.cursor = 'pointer';
-            style.color = '#333';
+            style.color = 'white';
             style.fontSize = '0.8em';
-            style.textAlign = 'left';
+            style.textAlign = 'center';
             style.paddingTop = '20px';
-            style.paddingLeft = '20px';
+            style.paddingLeft = '0px;';
         },
 
         //This method is called right before plotting
@@ -499,19 +1186,24 @@ function init() {
             //add some color to the nodes in the path between the
             //root node and the selected node.
             if (node.selected) {
-                node.data.$color = "#aaa";
+                node.data.$color = "#9BCD9B";
             }
             else {
                 delete node.data.$color;
                 //if the node belongs to the last plotted level
                 if (!node.anySubnode("exist")) {
+                    // if(node._depth==2){
+                    //     node.Config.color = "#eaa";
+                    //     //node.Config.width = "200";
+                    //     node.Config.type = "rectangle";
+                    //}
                     //count children number
                     var count = 0;
                     node.eachSubnode(function (n) { count++; });
                     //assign a node color based on
-                    //how many children it has
-                    //node.data.$color = ['#aaa', '#baa', '#caa', '#daa', '#eaa', '#faa'][count];
-                    node.data.$color = "#eed";
+                    //how many children it has      7D9EC0
+                    node.data.$color = ['#9BCD9B', '#baa', '#caa', '#daa', '#eaa', '#eaa','#eaa','#7D9EC0','#7D9EC0','#7D9EC0','#7D9EC0','#7D9EC0'][count];
+                    //node.data.$color = ['','','',''];
                 }
             }
         },
@@ -533,7 +1225,7 @@ function init() {
         }
     });
     //load json data
-    st.loadJSON(json);
+    st.loadJSON(jsons);
     //compute node positions and layout
     st.compute();
     //optional: make a translation of the tree
@@ -542,30 +1234,6 @@ function init() {
     st.onClick(st.root);
     //end
 
-}
-
-function changeHeight(node, json) {
-    var children = json.children;
-    var iHeight = 0;
-    for (var i = 0; i < children.length; i++) {
-        if (node.id === children[i].id) {
-            iHeight = children[i].children.length * 80 + 200;
-        }
-    }
-    var obj = document.getElementById("infovis");
-    obj.style.height = iHeight < 520 ? "520px" : iHeight + "px";
-};
-
-function maxHeight(json) {
-    var children = json.children;
-    var maxHeight = 0;
-    for (var i = 0; i < children.length; i++) {
-        if (maxHeight < children[i].children.length) {
-            maxHeight = children[i].children.length;
-        }
-    }
-    var obj = document.getElementById("infovis");
-    obj.style.height = maxHeight * 80 + 220 + "px";
 }
 
 
@@ -623,14 +1291,6 @@ function dealWithArr(originArr) {
     }
 }
 
-var last = {
-    "data": "",
-    "id": "999",
-    "l_flag": "0",
-    "name": "查看更多...",
-    "pid": "998",
-    "children": []
-};
 function appendChild(jsonArr, pObj) {
     for (var i = 0; i < jsonArr.length; i++) {
         if (jsonArr[i].pid == pObj.id) {
@@ -654,21 +1314,70 @@ function showDetails(nodeId) {
         //     return p.pid == ccnode.pid;
         // });
         for (var i = 0; i < result.length; i++) {
-            if(result[i].pid === ccnode[0].pid){
-                string+='<tr><td>'+result[i].alias+'</td></tr>';
+            if (result[i].pid === ccnode[0].pid) {
+                string += '<tr><td>' + result[i].alias + '</td></tr>';
             }
         }
-        string+='</table>';
+        string += '</table>';
         Details.write(string);
     }
 }
 
-var Details = {
-    ele: false,
-    write: function (text) {
-        if (!this.ele)
-            this.ele = document.getElementById('detail');
-        this.ele.innerHTML = text;
-        this.ele.style.left = '20px';
+var pIds = [];
+function formatResult(Arr, pObject) {
+    var hasChild = false;
+    for (var i = 0; i < arr.length; i++) {
+        if (pObject.id == arr[i].pid) {
+            hasChild = true;
+            pObject.children.push(arr[i]);
+        }
     }
-};
+    if (hasChild == true) {
+        var currChildren = pObject.children;
+        for (var j = 0; j < currChildren.length; j++) {
+            formatResult(Arr, currChildren[j]);
+        }
+    } else {
+        var isExist = false;
+        for (var m = 0; m < pIds.length; m++) {
+            if (pIds[i] == pObject.pid) {
+                isExist = true;
+            }
+        }
+        if (!isExist) {
+            pIds.push(pObject.pid);
+        }
+    }
+    return pObject;
+}
+
+function dealChildren(cJson, pIds) {
+    for (var i = 0; i < pIds.length; i++) {
+        var cId = pIds[i];
+        if (cJson.id == cId) {
+            if (cJson.children.length > 8) {
+                cJson.children = cJson.children.slice(0, 8);
+                cJson.children.push({
+                    "data": "",
+                    "id": count + "",
+                    "l_flag": "0",
+                    "name": "查看更多...",
+                    "pid": targetJson.children[j].id,
+                    "children": []
+                });
+                seeMore.push({
+                    "data": "",
+                    "id": count + "",
+                    "l_flag": "0",
+                    "name": "查看更多...",
+                    "pid": targetJson.children[j].id,
+                    "children": []
+                });
+            }
+        } else {
+            for (var j = 0; j < cJson.children.length; j++) {
+                dealChildren(cJson.children[i], cId);
+            }
+        }
+    }
+}
